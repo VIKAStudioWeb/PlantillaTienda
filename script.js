@@ -5,14 +5,14 @@
    ========================================================= */
 var WHATSAPP_NUMBER='5491100000000';
 var PRODUCTS=[
- {id:'p1',name:'Bolso de lino crudo',price:18500,category:'accesorios',tag:'Nuevo',image:'https://images.unsplash.com/photo-1591561954557-26941169b49e?w=600&q=80',image2:'https://images.unsplash.com/photo-1584917865442-de89df76afd3?w=600&q=80',description:'Tote de lino 100% natural con forro interior y bolsillo para celular. 40x35 cm.'},
+ {id:'p1',name:'Bolso de lino crudo',price:18500,category:'accesorios',tag:'Nuevo',image:'https://images.unsplash.com/photo-1591561954557-26941169b49e?w=600&q=80',description:'Tote de lino 100% natural con forro interior y bolsillo para celular. 40x35 cm.'},
  {id:'p2',name:'Cinturón de cuero trenzado',price:12800,category:'accesorios',image:'https://images.unsplash.com/photo-1624222247344-550fb60583dc?w=600&q=80',description:'Cuero vacuno trenzado a mano, hebilla de metal envejecido. Varios talles.'},
- {id:'p3',name:'Jarrón de cerámica esmaltada',price:22900,category:'ceramica',tag:'Más vendido',image:'https://images.unsplash.com/photo-1578500494198-246f612d3b3d?w=600&q=80',image2:'https://images.unsplash.com/photo-1610701596007-11502861dcfa?w=600&q=80',description:'Torneado a mano y esmaltado en horno de alta temperatura. Pieza única.'},
+ {id:'p3',name:'Jarrón de cerámica esmaltada',price:22900,category:'ceramica',tag:'Más vendido',image:'https://images.unsplash.com/photo-1610701596007-11502861dcfa?w=600&q=80',description:'Torneado a mano y esmaltado en horno de alta temperatura. Pieza única.'},
  {id:'p4',name:'Set de tazas de cerámica x2',price:15400,category:'ceramica',image:'https://images.unsplash.com/photo-1514228742587-6b1558fcca3d?w=600&q=80',description:'Dos tazas de 250 ml hechas a mano, aptas para lavavajillas y microondas.'},
  {id:'p5',name:'Manta de algodón tejida',price:27500,category:'textiles',image:'https://images.unsplash.com/photo-1600166898405-da9535204843?w=600&q=80',description:'Algodón 100% tejido en telar. 130x180 cm, ideal para sillón o pie de cama.'},
- {id:'p6',name:'Cojín de lino natural',price:9800,category:'textiles',image:'https://images.unsplash.com/photo-1584100936595-c0654b55a2e6?w=600&q=80',description:'Funda de lino 45x45 cm con relleno incluido y cierre invisible.'},
+ {id:'p6',name:'Cojín de lino natural',price:9800,category:'textiles',image:'https://images.unsplash.com/photo-1578500494198-246f612d3b3d?w=500&q=80',description:'Funda de lino 45x45 cm con relleno incluido y cierre invisible.'},
  {id:'p7',name:'Espejo con marco de mimbre',price:31200,category:'decoracion',tag:'Nuevo',image:'https://images.unsplash.com/photo-1618220179428-22790b461013?w=600&q=80',description:'Espejo redondo de 50 cm con marco de mimbre tejido a mano.'},
- {id:'p8',name:'Portavelas de cerámica x3',price:13900,category:'decoracion',image:'https://images.unsplash.com/photo-1602874801007-bd36c37ea59a?w=600&q=80',description:'Tres portavelas de distintos tamaños, esmalte mate. Incluye velas de regalo.'}
+ {id:'p8',name:'Portavelas de cerámica x3',price:13900,category:'decoracion',image:'https://acdn-us.mitiendanube.com/stores/118/808/products/chatgpt-image-28-ene-2026-06_42_56-p-m-e4b76b3c94d7e31a8f17696365952740-480-0.webp',description:'Tres portavelas de distintos tamaños, esmalte mate. Incluye velas de regalo.'}
 ];
 
 var cart={},state={cat:'todos',price:'todos',q:'',sort:'rel'},$=function(id){return document.getElementById(id)};
