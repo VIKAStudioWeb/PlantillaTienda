@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Casa Lino — Accesorios y decoración artesanal | Envíos a todo el país</title>
+<meta name="description" content="Casa Lino: accesorios, cerámica, textiles y decoración hechos a mano en pequeños lotes. Comprá online y recibí en todo el país.">
+<link rel="canonical" href="https://www.tudominio.com/">
+<meta property="og:type" content="website"><meta property="og:title" content="Casa Lino — Accesorios y decoración artesanal"><meta property="og:description" content="Objetos hechos a mano. Envíos a todo el país."><meta property="og:image" content="https://www.tudominio.com/assets/images/og.jpg"><meta property="og:locale" content="es_AR">
+<link rel="icon" href="assets/images/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,400;0,500;1,400&family=Outfit:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Store","name":"Casa Lino","telephone":"+54 9 11 0000-0000","priceRange":"$$"}</script>
+</head>
+<body>
+<div class="announce">Envíos a todo el país · Cambios sin costo por 10 días</div>
+<header class="head"><div class="head-in">
+  <div style="display:flex;align-items:center;gap:1rem"><button class="icon-btn burger" id="burger" aria-label="Abrir menú" aria-expanded="false" aria-controls="navL">☰</button>
+  <nav class="nav-l" id="navL" aria-label="Principal"><a href="#categorias">Categorías</a><a href="#catalogo">Tienda</a><a href="#marca">La marca</a><a href="#contacto">Contacto</a></nav></div>
+  <a href="#inicio" class="logo">Casa Lino</a>
+  <div class="tools"><button class="icon-btn" id="cartBtn" aria-label="Abrir carrito"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M6 7h12l1 13H5L6 7z"/><path d="M9 7a3 3 0 0 1 6 0"/></svg><span class="count" id="count">0</span></button></div>
+</div></header>
+
+<main id="inicio">
+<section class="hero">
+  <div class="hero-a"><span class="eyebrow">Colección otoño</span><h1>Objetos para <em>quedarse</em></h1><p>Accesorios y decoración hechos a mano por talleres de distintas provincias, en tiradas chicas.</p><div><a class="btn" href="#catalogo">Ver catálogo</a></div></div>
+  <div class="hero-b"><img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=1000&q=80" alt="Objetos de decoración artesanal en tonos naturales"><div class="row2"><img src="https://images.unsplash.com/photo-1578500494198-246f612d3b3d?w=500&q=80" alt="Jarrón de cerámica esmaltada"><img src="https://images.unsplash.com/photo-1600166898405-da9535204843?w=500&q=80" alt="Manta de algodón tejida"></div></div>
+</section>
+
+<section id="categorias"><div class="wrap"><span class="eyebrow">Explorar</span><h2>Categorías</h2>
+  <div class="cats">
+    <button class="cat" data-cat="accesorios"><img src="https://images.unsplash.com/photo-1584917865442-de89df76afd3?w=500&q=80" alt="Accesorios"><span>Accesorios</span></button>
+    <button class="cat" data-cat="decoracion"><img src="https://images.unsplash.com/photo-1493663284031-b7e3aefcae8e?w=500&q=80" alt="Decoración"><span>Decoración</span></button>
+    <button class="cat" data-cat="ceramica"><img src="https://images.unsplash.com/photo-1610701596007-11502861dcfa?w=500&q=80" alt="Cerámica"><span>Cerámica</span></button>
+    <button class="cat" data-cat="textiles"><img src="https://images.unsplash.com/photo-1584100936595-c0654b55a2e6?w=500&q=80" alt="Textiles"><span>Textiles</span></button></div></div></section>
+
+<section id="catalogo" style="background:var(--color-alt)"><div class="wrap"><span class="eyebrow">Tienda</span><h2>Todos los productos</h2>
+  <div class="shop">
+    <aside class="filters" id="filters" aria-label="Filtros">
+      <div class="fgroup"><h3>Buscar</h3><input class="search" id="q" type="search" placeholder="Nombre del producto" aria-label="Buscar productos"></div>
+      <div class="fgroup"><h3>Categoría</h3>
+        <label><input type="radio" name="cat" value="todos" checked> Todas</label><label><input type="radio" name="cat" value="accesorios"> Accesorios</label><label><input type="radio" name="cat" value="decoracion"> Decoración</label><label><input type="radio" name="cat" value="ceramica"> Cerámica</label><label><input type="radio" name="cat" value="textiles"> Textiles</label></div>
+      <div class="fgroup"><h3>Precio</h3>
+        <label><input type="radio" name="price" value="todos" checked> Todos</label><label><input type="radio" name="price" value="0-15000"> Hasta $15.000</label><label><input type="radio" name="price" value="15000-25000"> $15.000 a $25.000</label><label><input type="radio" name="price" value="25000-999999"> Más de $25.000</label></div>
+    </aside>
+    <div><div class="bar"><button class="fbtn" id="fbtn" aria-expanded="false" aria-controls="filters">Filtros</button><p id="result"></p>
+      <select class="sort" id="sort" aria-label="Ordenar productos"><option value="rel">Destacados</option><option value="asc">Precio: menor a mayor</option><option value="desc">Precio: mayor a menor</option><option value="az">Nombre A–Z</option></select></div>
+      <div class="grid" id="grid"></div></div>
+  </div></div></section>
+
+<section><div class="wrap"><div class="perks">
+  <div class="perk"><h3>Hecho a mano</h3><p>Talleres locales, tiradas chicas.</p></div><div class="perk"><h3>Envíos a todo el país</h3><p>Despacho en 48 horas.</p></div><div class="perk"><h3>Cambios sin costo</h3><p>10 días para cambiar tu producto.</p></div><div class="perk"><h3>Listo para regalar</h3><p>Empaque cuidado sin cargo extra.</p></div></div></div></section>
+
+<section id="marca"><div class="wrap brand"><img src="https://images.unsplash.com/photo-1556228453-efd6c1ff04f6?w=700&q=80" alt="Taller artesanal de Casa Lino" loading="lazy"><div><span class="eyebrow">La marca</span><h2>Un proyecto de talleres chicos</h2><p>Casa Lino nació en 2020 para darle salida a piezas hechas por talleres artesanales de distintas provincias. Elegimos cada producto por su calidad y por la historia de quien lo hace.</p><p>Hoy trabajamos con doce talleres y renovamos el catálogo cada temporada, siempre en tiradas chicas.</p></div></div>
+  <div class="wrap"><span class="eyebrow" style="margin-top:4rem">Instagram · @casalino</span><div class="ig"><img src="https://images.unsplash.com/photo-1517705008128-361805f42e86?w=300&q=80" alt="Publicación 1" loading="lazy"><img src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?w=300&q=80" alt="Publicación 2" loading="lazy"><img src="https://images.unsplash.com/photo-1449247709967-d4461a6a6103?w=300&q=80" alt="Publicación 3" loading="lazy"><img src="https://images.unsplash.com/photo-1616627561950-9f746e330187?w=300&q=80" alt="Publicación 4" loading="lazy"><img src="https://images.unsplash.com/photo-1526047932273-341f2a7631f9?w=300&q=80" alt="Publicación 5" loading="lazy"><img src="https://images.unsplash.com/photo-1602874801007-bd36c37ea59a?w=300&q=80" alt="Publicación 6" loading="lazy"></div></div></section>
+
+<section style="background:var(--color-alt)"><div class="wrap"><h2 style="text-align:center">Preguntas frecuentes</h2><div class="faq">
+  <details><summary>¿Hacen envíos a todo el país?</summary><p>Sí, despachamos por correo a todas las provincias. El costo se calcula según el destino.</p></details>
+  <details><summary>¿Cómo pago mi pedido?</summary><p>Armás el carrito, lo enviás por WhatsApp y coordinamos el pago por transferencia o Mercado Pago.</p></details>
+  <details><summary>¿Puedo cambiar un producto?</summary><p>Sí, tenés 10 días desde que lo recibís, siempre que esté sin uso.</p></details>
+  <details><summary>¿Cuánto tarda en llegar?</summary><p>Entre 3 y 7 días hábiles según la zona, una vez despachado.</p></details>
+  <details><summary>¿Tienen local físico?</summary><p>No por el momento: trabajamos solo con venta online.</p></details></div></div></section>
+
+<section id="contacto"><div class="wrap"><span class="eyebrow">Contacto</span><h2>¿Tenés una consulta?</h2>
+  <div class="contact"><form id="form" novalidate><div><label class="l" for="nombre">Nombre</label><input class="in" id="nombre" name="nombre" required></div><div><label class="l" for="email">Email</label><input class="in" id="email" name="email" type="email" required></div><div><label class="l" for="msg">Mensaje</label><textarea class="in" id="msg" name="msg" rows="4" required></textarea></div><button class="btn" type="submit">Enviar consulta</button><p class="status" id="status" role="status"></p></form>
+  <div class="cinfo"><p><b>WhatsApp</b><a href="https://wa.me/5491100000000">+54 9 11 0000-0000</a></p><p><b>Email</b><a href="mailto:hola@casalino.com">hola@casalino.com</a></p><p><b>Instagram</b><a href="https://instagram.com/casalino" target="_blank" rel="noopener">@casalino</a></p><p><b>Envíos</b>A todo el país por correo, 3 a 7 días hábiles.</p></div></div></div></section>
+</main>
+
+<footer><div class="wrap"><div class="fgrid"><div><a href="#inicio" class="logo" style="text-align:left;color:#fff;display:block;margin-bottom:.8rem">Casa Lino</a><p style="font-size:.92rem;max-width:280px">Accesorios y decoración artesanal, hechos a mano en pequeños lotes.</p></div>
+<div><h4>Tienda</h4><ul><li><a href="#catalogo">Catálogo</a></li><li><a href="#categorias">Categorías</a></li><li><a href="#marca">La marca</a></li></ul></div><div><h4>Ayuda</h4><ul><li><a href="#contacto">Contacto</a></li><li><a href="#catalogo">Envíos y cambios</a></li></ul></div><div><h4>Seguinos</h4><ul><li><a href="https://instagram.com/casalino" target="_blank" rel="noopener">Instagram</a></li><li><a href="https://wa.me/5491100000000" target="_blank" rel="noopener">WhatsApp</a></li></ul></div></div><p class="fbot">© 2026 Casa Lino. Todos los derechos reservados.</p></div></footer>
+
+<div class="overlay" id="overlay"></div>
+<aside class="drawer" id="drawer" aria-label="Carrito de compras"><div class="dh"><h2>Tu carrito</h2><button class="icon-btn" id="cartClose" aria-label="Cerrar carrito" style="font-size:1.8rem">×</button></div><div class="items" id="items"></div>
+<div class="sum"><div class="srow"><span>Subtotal</span><span id="sub">$0</span></div><div class="srow t"><span>Total</span><span id="tot">$0</span></div><p style="font-size:.8rem;color:var(--color-soft);margin-bottom:1rem">El envío se calcula al coordinar por WhatsApp.</p><button class="btn btn-block" id="checkout">Enviar pedido por WhatsApp</button></div></aside>
+
+<div class="mo" id="mo"><div class="modal" role="dialog" aria-modal="true" aria-labelledby="mName"><button class="x" id="mClose" aria-label="Cerrar">×</button><img id="mImg" src="" alt=""><div class="mb"><span class="eyebrow" id="mCat"></span><h2 id="mName"></h2><p class="price" id="mPrice" style="font-size:1.4rem"></p><p id="mDesc" style="color:var(--color-soft)"></p><button class="btn" id="mAdd">Agregar al carrito</button></div></div></div>
+
+<a class="wa" href="https://wa.me/5491100000000" target="_blank" rel="noopener" aria-label="Escribir por WhatsApp"><svg width="26" height="26" viewBox="0 0 24 24" fill="#fff" aria-hidden="true"><path d="M12 2C6.5 2 2 6.5 2 12c0 1.8.5 3.6 1.4 5.1L2 22l5-1.3c1.5.8 3.2 1.3 5 1.3 5.5 0 10-4.5 10-10S17.5 2 12 2z"/></svg></a>
+<script src="script.js"></script>
+</body></html>
